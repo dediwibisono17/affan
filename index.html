@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Klaster Hidupku - Beranda</title>
     <link rel="stylesheet" href="sass/bootstrap.min.css">
     <link rel="stylesheet" href="sass/slick-theme.css">
     <link rel="stylesheet" href="sass/slick.css">
+    <link rel="stylesheet" href="sass/animate.min.css">
     <link rel="stylesheet" href="sass/fa.css">
     <link rel="stylesheet" href="sass/header.css">
     <link rel="stylesheet" href="sass/style.css">
@@ -92,11 +93,11 @@
             </div>
             <div class="container">
                 <div class="side">
-                    <div class="side-50">
+                    <div class="side-50 wow animate__ animate__fadeIn animated" data-wow-delay="0.5s">
                         <h1 class="section__title">Klaster Usaha</h1>
                         <p>Kelompok usaha yang terbentuk berdasarkan kesamaan kepentingan, kondisi lingkungan, dan atau keakraban untuk meningkatkan dan mengembangkan usaha anggota.</p>
                     </div>
-                    <div class="side-50">
+                    <div class="side-50 wow animate__ animate__fadeIn animated" data-wow-delay="0.5s">
                         <div class="image">
                             <img src="img/about.png" alt="" title="" loading="lazy">
                         </div>
@@ -243,18 +244,23 @@
     <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="login-modalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-                </div>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="text-center">
+                        <img src="img/logo.png" alt="" title="" loading="lazy">
+                    </div>
+                    <div class="form-group">
+                        <label for="username" class="font-bold">Username</label>
+                        <input type="email" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="font-bold">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <i class="fa fa-eye read-pass" id="show-pass" aria-hidden="true" onclick="showHide()"></i>
+                    </div>
+                    <div class="mb-3"><a href="#" class="font-bold color-primary">Lupa Password?</a></div>
+                    <button class="btn btn-primary w-100">
+                        Masuk
+                    </button>
                 </div>
             </div>
         </div>
