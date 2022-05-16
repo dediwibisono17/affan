@@ -63,6 +63,7 @@ section {
             position: relative;
             z-index: 4;
             transition: .7s;
+            height: 480px;
             @media screen and (max-width: 766px) {
                 height: 400px;
             }
@@ -97,6 +98,7 @@ section {
             img {
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
                 @media screen and (max-width: 766px) {
                     width: 100%;
                     height: 100%;
@@ -493,4 +495,26 @@ section,
 
 .pointer {
     cursor: pointer;
+}
+
+.form-group {
+    position: relative;
+}
+
+.read-pass {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    cursor: pointer;
+}
+
+.color-primary {
+    color: $primary;
+}
+
+.modal-content {
+    border-radius: 8px !important;
+    .btn-primary {
+        border-radius: 8px !important;
+    }
 }
